@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% include 'snippets/header.html' %}
+
+{% block content %}
+<p align="center"><h2>Universities in the USA</h2></p>
+<p><h3>US universities are considered the most prestigious in the world. According to the QS 2020 ranking, 38 of American universities are among the world’s top 150. The front-runners are Massachusetts Institute of Technology, Harvard University, and Stanford University. Largely due to their reputation, an American degree opens up excellent career prospects anywhere in the world. However, when submitting documents, one should take into account that there is no free education in the USA.
+    Admission to US universities and colleges is characterized by extremely high competition. Another challenge is taking standardized tests such as SAT / ACT and GRE / GMAT. The selection is also based on the language test results, Grade Point Average, letter of motivation and other application documents.</h3></p>
+
+<a href="{% url 'university:mit' %}" class="nav-item nav-link active"><h1>MIT University</h1></a>
+<img src="{% static 'img/mit1.jpg' %}" alt="mit">
+
+<a href="{% url 'university:stanford' %}" class="nav-item nav-link active"><h1>Stanford University</h1></a>
+<img src="{% static 'img/stanford.jpg' %}" alt="stanford">
+
+<a href="{% url 'university:harvard' %}" class="nav-item nav-link active"><h1>Harvard University</h1></a>
+<img src="{% static 'img/harvard.jpg' %}" alt="harvard">
+
+<a href="{% url 'university:columbia' %}" class="nav-item nav-link active"><h1>Columbia University</h1></a>
+<img src="{% static 'img/columbia.jpg' %}" alt="harvard">
+
+
+{% endblock %}
+
+{% include 'snippets/footer.html' %}

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% include 'snippets/header.html' %}
+
+{% block content %}
+<h1>Harvard University</h1>
+<p><h3>Harvard University is the oldest university in the United States, founded in 1636 and named after the priest John Harvard, who left half of his property and an extensive library to the university. At the moment, 21,000 students study at the university, with the majority being graduate and doctoral students.
+    Harvard boasts a huge campus of more than 2000 hectares, equipped with the latest technology. The campus infrastructure includes world-class scientific laboratories, sports centers, several museums, libraries, cafes, and clubs. The University Library is the largest academic library in the world with 18 million books.
+    Harvard University is one of the most prestigious universities in the world, a member of the elite Ivy League and the prestigious Association of American Universities. The university's annual research spending is more than $1.1 billion - according to this indicator, the university ranks 9th among US universities. More than 50 Nobel laureates are associated with the name of the university (teachers, alumni, researchers).
+    Harvard University alumni include 8 American presidents, 188 living billionaires, 108 Olympic medalists, and 10 Oscar winners.</h3></p>
+<img src="{% static 'img/harvard1.jpg' %}" alt="harvard">
+<h2>Why go to the Harvard University?</h2>
+<p><h3>- a unique chance to get a diploma from one of the most famous universities in the world;</h3></p>
+<p><h3>- rich extracurricular life - over 400 student organizations (including creative and professional communities) and 42 sports clubs;</h3></p>
+<p><h3>- 5th place in the world ranking of graduate employability (according to QS - Quacquarelli Symonds).</h3></p>
+
+
+<h2>Strong directions:</h2>
+<p><h4>- humanitarian and social disciplines (psychology, philosophy, political science, history, sociology, etc.)</h4></p>
+<p><h4>- medicine and healthcare</h4></p>
+<p><h4>- jurisprudence</h4></p>
+<p><h4>- business and economics</h4></p>
+<p><h4>- art</h4></p>
+<p><h4>- engineering and computer science</h4></p>
+
+{% endblock %}
+
+{% include 'snippets/footer.html' %}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="top-news">
+    <div class="container-fluid">
+        <div class="row">
+            {% for post in object_list %}
+            <div class='post-entry' ></div>
+            <div class="col-md-6">
+                <div class="tn-img">
+                    <img src="{{ post.imageUrl }}"/>
+                    <div class="tn-content">
+                        <div class="tn-content-inner">
+                            <a class="tn-date" href=""><i class="far fa-clock"></i>{{ post.author }}</a>
+                            <a class="tn-title" href="{% url 'university:detail-page' post.id %}">{{ post.name }}</a>
+                            <a class="tn-title" href="">{{ post.country }}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+{% endblock %}
+

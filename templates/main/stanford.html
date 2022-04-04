@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% include 'snippets/header.html' %}
+
+{% block content %}
+<h1>Stanford University</h1>
+<p><h3>Stanford University was founded by former California Governor Leland Stanford in 1891. More than 17,000 students study at Stanford, most of them undergraduates and graduate students.
+    The main campus was designed by architect and designer Frederick Law Olmsted, who also designed Central Park and Prospect Park in New York. Now the campus is one of the largest in the United States - there are even 24 bus routes on its territory.
+    Currently, 17 Nobel laureates, 4 Pulitzer Prize winners, 288 members of the American Academy of Arts and Sciences and 109 members of the National Academy of Engineering work and teach at the university. The university invests heavily in the development of research activities, and also motivates students to create start-ups, some of which are funded by the university and its trustees.
+    The 31st US President Herbert Hoover, the founders of high-tech companies: Sergey Brin (Google), William Hewlett and David Packard (Hewlett-Packard), Reed Hastings (Netflix), Mike Krieger (Instagram) studied at Stanford University at different times; and actress Sigourney Weaver.</h3></p>
+<img src="{% static 'img/stanford1.jpg' %}" alt="stanford">
+<h2>Why go to the Stanford University?</h2>
+<p><h3>- about 650 student communities covering a wide range of interests, including art, culture, media, politics. There are also a lot of academic clubs, for example, robotics, energy and others.</h3></p>
+<p><h3>- more than 30 sports teams, including rowing, cycling and cheerleading teams;</h3></p>
+<p><h3>- a prestigious diploma that is valued by employers around the world.</h3></p>
+
+
+<h2>Strong directions:</h2>
+<p><h4>- engineering</h4></p>
+<p><h4>- information technology and computer science</h4></p>
+<p><h4>- natural and exact sciences</h4></p>
+<p><h4>- jurisprudence</h4></p>
+<p><h4>- political science and international relations</h4></p>
+
+
+{% endblock %}
+
+{% include 'snippets/footer.html' %}

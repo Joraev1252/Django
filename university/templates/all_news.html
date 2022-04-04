@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% include 'snippets/header.html' %}
+
+{% block content %}
+        {% for post in news_list %}
+            <div class='post-entry' >
+                <h3>{{ post.name }}</h3>
+                <h6>{{ post.country }}</h6>
+            </div>
+        {% endfor %}
+{% endblock %}
+
+{% include 'snippets/footer.html' %}

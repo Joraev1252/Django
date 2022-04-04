@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class='post-entry' >
+        <h1>{{ news.name }}</h1>
+        <img src="{{ news.image.url }}"/>
+        <h3>{{ news.about }}</h3>
+        <h5>{{ news.country }}</h5>
+
+        <p><a href="{% url 'university:update' news.pk %}">Edit</a></p>
+        <p><a href="{% url 'university:delete' news.pk %}">Delete</a></p>
+        <p><a href="{% url 'university:home' %}">Home</a></p>
+
+    </div>
+{% endblock %}

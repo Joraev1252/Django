@@ -1,0 +1,56 @@
+{% load static %}
+ <!-- Top Header Start -->
+<div class="top-header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="logo">
+                            <a href="">
+                                <img src="{% static 'img/3_29_2022 10_29_53 AM.png' %}" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-4">
+                        <div class="search">
+                            <input type="text" placeholder="Search">
+                            <button><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="social">
+                             <a href="https://t.me/joraev_a"><i class="fab fa-telegram"></i></a>
+                             <a href="https://instagram.com/joraev_azam?utm_medium=copy_link"><i class="fab fa-instagram"></i></a>
+                             <a href="https://www.youtube.com/channel/UCHNjoEcp7OcU1y8wANhSduw"><i class="fab fa-youtube"></i></a>
+                             <a href=""><i class="fab fa-twitter"></i></a>
+                             <a href=""><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- Top Header End -->
+
+
+<!-- Header Start -->
+<div class="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">MENU</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav m-auto">
+                            <a href="{% url 'university:universities' %}" class="nav-item nav-link">Home</a>
+                            <a href="{% url 'university:list-universities' %}" class="nav-item nav-link">Universities</a>
+                            <a href="{% url 'university:education' %}" class="nav-item nav-link">Education</a>
+                            <a href="{% url 'university:add-page' %}" class="nav-item nav-link">Add University</a>
+                            <a href="{% url 'university:news-list' %}" class="nav-item nav-link">added</a>
+                            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+<!-- Header End -->
